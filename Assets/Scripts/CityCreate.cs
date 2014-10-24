@@ -72,9 +72,6 @@ public class CityCreate : MonoBehaviour {
 
 			if (xUnitsSoFar>endOfRow) {
 				xUnitsSoFar = 0f;
-
-
-
 				if (groundType ==0) {
 					zUnitsSoFar+=1.5f;
 					streetDirection = 1;
@@ -98,11 +95,7 @@ public class CityCreate : MonoBehaviour {
 					taxiRotation.eulerAngles = new Vector3(-15,-90,0);
 					womanRotation.eulerAngles = new Vector3(0,90,0);
 				}
-
-
-
 				groundType += streetDirection;
-
 			}
 			yield return new WaitForSeconds(0.001f);
 		}
